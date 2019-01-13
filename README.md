@@ -93,17 +93,17 @@ Why not use directly SHA1 as it's in the original list ? Because we need more th
 
 
 **Output of program :**
-> ber@serveur:/home2/ber/ihbpwbf$ python3.5 ihbpwbf-gen.py__
-> Testing 'in filter' item. Number of items=517297__
-> Every item is in filter. The filter seems consistent__
-> Testing 'not in filter' item. Number of items=1000000__
-> False positive aca08ef115b7537cc731f8a538f32bd31586b795 is reported in filter, but is probably not__
-> [...many other false positive...]__
-> False positive a2aaffebd961894cb9d2d4a5b3892359eca074ba is reported in filter, but is probably not__
-> false positive ratio 0.000341__
-> ber@serveur:/home2/ber/ihbpwbf$ ls -lah *.bin__
-> -rw-r--r-- 1 ber ber 1,0G déc.  22 23:59 pwned-passwords-bf.bin__
-> -rw-r--r-- 1 ber ber 9,7G déc.  22 23:58 pwned-passwords-ordered-by-hash.bin__
+> ber@serveur:/home2/ber/ihbpwbf$ python3.5 ihbpwbf-gen.py</br>
+> Testing 'in filter' item. Number of items=517297</br>
+> Every item is in filter. The filter seems consistent</br>
+> Testing 'not in filter' item. Number of items=1000000</br>
+> False positive aca08ef115b7537cc731f8a538f32bd31586b795 is reported in filter, but is probably not</br>
+> [...many other false positive...]</br>
+> False positive a2aaffebd961894cb9d2d4a5b3892359eca074ba is reported in filter, but is probably not</br>
+> false positive ratio 0.000341</br>
+> ber@serveur:/home2/ber/ihbpwbf$ ls -lah *.bin</br>
+> -rw-r--r-- 1 ber ber 1,0G déc.  22 23:59 pwned-passwords-bf.bin</br>
+> -rw-r--r-- 1 ber ber 9,7G déc.  22 23:58 pwned-passwords-ordered-by-hash.bin</br>
 
 
 Targeted false positive rate = 1/2918 = 0.000342
@@ -153,11 +153,11 @@ Exposed API :
 Used to test the ihbpwbf.py module. Provide a simple password lookup application.
 
 
-> ber@serveur:/home2/ber/ihbpwbf$ python3.5 ihbpwbf-test-mod.py__
-> Enter a password to test (or nothing to exit program) : p@ssw0rd__
-> Warning : probably compromised !__
-> Enter a password to test (or nothing to exit program) : kldjsklfhsjkfgnejkl__
-> Good : This password is not in the filter__
+> ber@serveur:/home2/ber/ihbpwbf$ python3.5 ihbpwbf-test-mod.py</br>
+> Enter a password to test (or nothing to exit program) : p@ssw0rd</br>
+> Warning : probably compromised !</br>
+> Enter a password to test (or nothing to exit program) : kldjsklfhsjkfgnejkl</br>
+> Good : This password is not in the filter</br>
 
 
 
