@@ -1,3 +1,4 @@
+#!/usr/bin/python3.5
 """
     ihbpwbf.py python module
     Copyright (C) 2018 Bertrand MAUJEAN
@@ -18,10 +19,10 @@
 # Check documentation in README.md file
 
 
-import ihbpwbf
+import pyihbpwbf
 
-#ihbpwbf.setFilterFileName("pwned-passwords-bf.bin2") # temporary used to test file error and file specification
-#ihbpwbf.setFilterFileName(r"C:\Users\bmaujean\Desktop\pwned-passwords-bf.bin2")
+#pyihbpwbf.setFilterFileName("pwned-passwords-bf.bin2") # temporary used to test file error and file specification
+#pyihbpwbf.setFilterFileName(r"C:\Users\bmaujean\Desktop\pwned-passwords-bf.bin2")
 
 while True:
     print("Enter a password to test (or nothing to exit program) : ", end="")
@@ -29,15 +30,15 @@ while True:
     if len(givenPwd) == 0:
         break
     
-    if ihbpwbf.checkPassword(givenPwd):
+    if pyihbpwbf.checkPassword(givenPwd):
         print("Warning : probably compromised !")
     else:
         print("Good : This password is not in the filter")
 
     print("");
 
-#ihbpwbf.checkSHA1("jkhjkhk") # temporary used to test exeception throwing   
-ihbpwbf.unloadFilter()
+#pyihbpwbf.checkSHA1("jkhjkhk") # temporary used to test exeception throwing   
+pyihbpwbf.unloadFilter()
     
     
 
